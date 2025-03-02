@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- daisyUI cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body id="body-theme" class="px-36 pt-6 pb-15 bg-[#f4f7ff]">
+    <!-- nave section  -->
+    <header>
+      <nav class="navbar bg-base-100 shadow-sm justify-between p-3 rounded-lg">
+
+        <div class="flex items-center gap-2">
+          <img src="assets/logo.png" alt="">
+          <a class="text-2xl">Dev<span class="font-bold">Board</span></a>
+        </div>
+
+        <button id="btn-blogs" class="btn p-4 bg-[#3752FD] border-none text-white">Back to Desk</button>
+
+      </nav>
+    </header>
+
+    <!-- blog section  -->
+    <section>
+        <div>
+            <h1 class="text-2xl font-bold my-3 text-center">Blogs</h1>
+
+            <!-- Question-1 -->
+            <div class="bg-white p-4 rounded mt-5">
+                <h2 class="text-xl font-bold">Question-1: What are the different ways to select an element in the DOM?</h2>
+                <div class="border border-dashed text-[#e0e6f7] my-3"></div>
+                <p>There are different ways to select an element in Dom, some of them are given below. <br> 
+                    1. document.getElementById <br> 2. document.getElementsByClassName <br> 3. document.getElementsByTagName <br> 4. document.querySelector <br> 5. document.querySelectorAll</p>
+            </div>
+
+            <!-- Question-2 -->
+            <div class="bg-white p-4 rounded mt-5">
+                <h2 class="text-xl font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
+                <div class="border border-dashed text-[#e0e6f7] my-3"></div>
+                <p> <span class="underline font-semibold">innerHTML:</span>
+                    Retrieves the entire HTML content within an element
+                    <br>
+                    <span class="underline font-semibold">innerText:</span>
+                    Retrieves only the visible text content of an element
+                    <br>
+                    <span class="underline font-semibold">textContent:</span>
+                    Retrieves all text content within an element</p>
+            </div>
+
+            <!-- Question-3 -->
+            <div class="bg-white p-4 rounded mt-5">
+                <h2 class="text-xl font-bold">Question-3: What is event delegation in the DOM?</h2>
+                <div class="border border-dashed text-[#e0e6f7] my-3"></div>
+                <p>Event delegation is a technique in JavaScript where a single event listener is attached to a parent element instead of attaching event listeners to multiple child elements.</p>
+            </div>
+
+            <!-- Question-4 -->
+            <div class="bg-white p-4 rounded mt-5">
+                <h2 class="text-xl font-bold">Question-4: What is event bubbling in the DOM?</h2>
+                <div class="border border-dashed text-[#e0e6f7] my-3"></div>
+                <p>Event bubbling is a type of DOM event propagation where the event first triggers on thr innermost target element, and then successively triggers on the ancestors (parents) of the traget element in the same nesting hierarchy till it reaches the outermost DOM element or document object</p>
+            </div>
+
+            <!-- Question-5 -->
+            <div class="bg-white p-4 rounded mt-5">
+                <h2 class="text-xl font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+                <div class="border border-dashed text-[#e0e6f7] my-3"></div>
+                <p> <span class="underline font-semibold">create element:</span>
+                    document.createElement('tagName')
+                    <br>
+                    <span class="underline font-semibold">add element:</span>
+                    appendchild()
+                    <br>
+                    <span class="underline font-semibold">remove element:</span>
+                    removeChild()</p>
+            </div>
+        </div>
+    </section>
+ 
+
+
+
+    <script src="script/back.js"></script>
+</body>
+</html>

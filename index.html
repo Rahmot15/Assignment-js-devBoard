@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- daisyUI cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+      .add-style {
+        background-color: #f4f7ff;
+        border-radius: 6px;
+        padding: 12px;
+        margin-top: 12px;
+      }
+    </style>
+</head>
+<body id="body-theme" class="px-36 pt-6 pb-15 bg-[#f4f7ff]">
+    <!-- nave section  -->
+    <header>
+      <nav class="navbar bg-base-100 shadow-sm justify-between p-3 rounded-lg">
+
+        <div class="flex items-center gap-2">
+          <img src="assets/logo.png" alt="">
+          <a class="text-2xl">Dev<span class="font-bold">Board</span></a>
+        </div>
+
+        <div class="flex items-center gap-9">
+          <div class="flex items-center gap-3 bg-[#f4f7ff] px-4 py-2 rounded-full">
+            <img src="assets/checkbox.png" alt="">
+            <h1 id="increased" class="text-2xl font-bold">23</h1>
+          </div>
+
+          <button id="btn-theme" class="btn rounded-full px-0">
+            <img src="assets/theme-btn.png" alt="" class="">
+          </button>
+        </div>
+
+      </nav>
+    </header>
+
+
+    <!-- hero section -->
+    <section>
+      <div class="grid grid-cols-4 gap-6 mt-5">
+        <!-- left side -->
+        <div class="col-span-3 bg-white p-6 rounded-2xl">
+
+          <!-- top part  -->
+          <div class="grid grid-cols-4 gap-5">
+
+            <!-- left  -->
+            <div class="col-span-1 rounded-xl flex items-center justify-center gap-4 p-4 bg-[#f4f7ff]">
+              <div class="">
+                <img class="" src="assets/checkbox.png" alt="">
+              </div>
+              <div>
+                <p>Task Assigned </p>
+                <h1 id="decreased" class="text-2xl font-bold">06</h1>
+              </div>
+            </div>
+
+            <!-- middle -->
+            <div id="btn-blogs" class="col-span-2 rounded-xl flex items-center justify-center gap-4 p-4 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] cursor-pointer">
+              <div class=" ">
+                <img src="assets/board.png" alt="">
+              </div>
+              <div>
+                <p class="text-white">Discover Something</p>
+                <p class="text-white">New Today!</p>
+              </div>
+            </div>
+
+            <!-- right  -->
+            <div class="col-span-1 rounded-xl flex items-center justify-center gap-4 p-4 bg-[#f4f7ff]">
+              <div>
+                <img src="assets/calender.png" alt="">
+              </div>
+              <div>
+                <p id="day"> </p>
+                <h1 id="date" class="font-bold"></h1>
+              </div>
+            </div>
+          </div>
+
+          <!-- dash border  -->
+          <div class="border border-dashed text-[#e0e6f7] my-6"></div>
+
+          <!-- bottom task compleat -->
+          <div class="grid grid-cols-3 gap-9">
+            <!-- task box 1  -->
+            <div class="bg-[#f4f7ff] p-4 col-span-1 rounded-xl">
+              <p class="bg-white p-3 rounded-lg">ShopEase</p>
+              <h1 id="title-1" class="text-2xl my-3 font-semibold">Fix Mobile Button Issue </h1>
+              <p class="line-clamp-2 bg-white p-3 rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                and ensure onClick works properly</p>
+
+              <div class="border border-dashed text-[#becdf5] my-6"></div>
+
+              <div class="flex justify-between">
+                <div>
+                  <p>Deadline</p>
+                  <h3 class="font-bold">21 March 2025</h3>
+                </div>
+                <button id="box-1" class="btn p-4 bg-[#3752FD] border-none text-white all-task">Completed</button>
+              </div>
+            </div>
+            <!-- task box 2  -->
+            <div class="bg-[#f4f7ff] p-4 col-span-1 rounded-xl">
+              <p class="bg-white p-3 rounded-lg">CloudSync</p>
+              <h1 id="title-2" class="text-2xl my-3 font-semibold">Add Dark Mode</h1>
+              <p class="line-clamp-2 bg-white p-3 rounded-lg">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+
+              <div class="border border-dashed text-[#becdf5] my-6"></div>
+
+              <div class="flex justify-between">
+                <div>
+                  <p>Deadline</p>
+                  <h3 class="font-bold">21 March 2025</h3>
+                </div>
+                <button id="box-2" class="btn p-4 bg-[#3752FD] border-none text-white all-task">Completed</button>
+              </div>
+            </div>
+            <!-- task box 3  -->
+            <div class="bg-[#f4f7ff] p-4 col-span-1 rounded-xl">
+              <p class="bg-white p-3 rounded-lg">SwiftPay</p>
+              <h1 id="title-3" class="text-2xl my-3 font-semibold">Optimize  Home page </h1>
+              <p class="line-clamp-2 bg-white p-3 rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                and ensure onClick works properly</p>
+
+              <div class="border border-dashed text-[#becdf5] my-6"></div>
+
+              <div class="flex justify-between">
+                <div>
+                  <p>Deadline</p>
+                  <h3 class="font-bold">21 March 2025</h3>
+                </div>
+                <button id="box-3" class="btn p-4 bg-[#3752FD] border-none text-white all-task">Completed</button>
+              </div>
+            </div>
+            <!-- task box 4  -->
+            <div class="bg-[#f4f7ff] p-4 col-span-1 rounded-xl">
+              <p class="bg-white p-3 rounded-lg">Meta</p>
+              <h1 id="title-4" class="text-2xl my-3 font-semibold">Add new emoji 🤲</h1>
+              <p class="line-clamp-2 bg-white p-3 rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                and ensure onClick works properly</p>
+
+              <div class="border border-dashed text-[#becdf5] my-6"></div>
+
+              <div class="flex justify-between">
+                <div>
+                  <p>Deadline</p>
+                  <h3 class="font-bold">21 March 2025</h3>
+                </div>
+                <button id="box-4" class="btn p-4 bg-[#3752FD] border-none text-white all-task">Completed</button>
+              </div>
+            </div>
+            <!-- task box 5  -->
+            <div class="bg-[#f4f7ff] p-4 col-span-1 rounded-xl">
+              <p class="bg-white p-3 rounded-lg">Google LLC</p>
+              <h1 id="title-5" class="text-2xl my-3 font-semibold">Integrate OpenAI API </h1>
+              <p class="line-clamp-2 bg-white p-3 rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                and ensure onClick works properly</p>
+
+              <div class="border border-dashed text-[#becdf5] my-6"></div>
+
+              <div class="flex justify-between">
+                <div>
+                  <p>Deadline</p>
+                  <h3 class="font-bold">21 March 2025</h3>
+                </div>
+                <button id="box-5" id="btn-task" class="btn p-4 bg-[#3752FD] border-none text-white all-task">Completed</button>
+              </div>
+            </div>
+            <!-- task box 6  -->
+            <div class="bg-[#f4f7ff] p-4 col-span-1 rounded-xl">
+              <p class="bg-white p-3 rounded-lg">Glassdoar</p>
+              <h1 id="title-6" class="text-2xl my-3 font-semibold">Improve Job searching </h1>
+              <p class="line-clamp-2 bg-white p-3 rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                and ensure onClick works properly</p>
+
+              <div class="border border-dashed text-[#becdf5] my-6"></div>
+
+              <div class="flex justify-between">
+                <div>
+                  <p>Deadline</p>
+                  <h3 class="font-bold">21 March 2025</h3>
+                </div>
+                <button id="box-6" class="btn p-4 bg-[#3752FD] border-none text-white">Completed</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- right side  -->
+        <div class="col-span-1 bg-white p-6 rounded-2xl flex flex-col  items-center">
+          <div>
+            <div class="flex items-center gap-3 mb-4">
+              <img src="assets/activity.png" alt="">
+              <p>Activity Log</p>
+            </div>
+            <button id="clear-all" class="btn p-4 bg-[#3752FD] border-none text-white">clear History</button>
+          </div>
+          <div class="border border-dashed text-[#e0e6f7] my-6"></div>
+          <!-- History add  -->
+          <div id="add-parent">
+            <p id="add-history"></p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <script src="script/script.js"></script>
+    <script src="script/blogs.js"></script>
+    <script src="script/alltask.js"></script>
+    <script src="script/addhistory.js"></script>
+</body>
+</html>
